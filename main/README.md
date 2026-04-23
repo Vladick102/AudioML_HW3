@@ -16,9 +16,10 @@ The model is evaluated using two metrics:
 * **WER (Word Error Rate):** Measures the percentage of words that were incorrectly predicted (insertions, deletions, substitutions).
 * **CER (Character Error Rate):** Measures the percentage of incorrect characters.
 
-| Word Error Rate (WER) | Character Error Rate (CER) |
-| --------------------- | -------------------------- |
-| 0.2565 | 0.1107 |
+| Model | Word Error Rate (WER) | Character Error Rate (CER) |
+| ----- | --------------------- | -------------------------- |
+| Baseline           | 0.3286 | 0.1910 |
+| Trained on Toronto | 0.2565 | 0.1107 |
 
 ## Hypotheses
 * **Hypothesis on Text Normalization:** Stripping punctuation and lowercasing during the `normalize_text` evaluation step will result in significantly better WER/CER scores than raw inference, as the model won't be penalized for missing commas or capitalization nuances.
